@@ -24,7 +24,7 @@ const Banner = () => {
                         <Typography variant="h3">
                             Your New Smile <br /> Starts Here
                         </Typography>
-                        <Typography variant="h6" sx={{ fontSize: 13, color: 'gray', fontWeight: 300 }}>
+                        <Typography variant="h6" sx={{ my: 3, fontSize: 13, color: 'gray', fontWeight: 300 }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consectetur quibusdam. Explicabo nobis earum sequi error nam sit harum et!
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Get Appointment</Button>
