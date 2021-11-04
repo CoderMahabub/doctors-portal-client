@@ -7,12 +7,14 @@ import ExceptionBanner from '../ExceptionBanner/ExceptionBanner';
 import Testimonial from '../Testimonial/Testimonial';
 import ContactUs from '../ContactUs/ContactUs';
 import Footer from '../../Shared/Footer/Footer';
+import Info from '../Info/Info';
 
 const Home = () => {
     return (
         <div>
             <Navigation></Navigation>
             <Banner></Banner>
+            <Info></Info>
             <Services></Services>
             <ExceptionBanner></ExceptionBanner>
             <AppointmentBanner></AppointmentBanner>
