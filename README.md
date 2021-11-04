@@ -9,4 +9,8 @@
 3. Install Calender Related Packages
   - yarn install @mui/lab
   - yarn add @mui/material
+4. Material Icon
+  - yarn add @mui/icons-material
+  - yarn add @mui/material
+
 

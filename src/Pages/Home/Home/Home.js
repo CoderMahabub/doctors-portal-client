@@ -5,6 +5,8 @@ import Services from '../Services/Services';
 import Navigation from '../../Shared/Navigation/Navigation';
 import ExceptionBanner from '../ExceptionBanner/ExceptionBanner';
 import Testimonial from '../Testimonial/Testimonial';
+import ContactUs from '../ContactUs/ContactUs';
+import Footer from '../../Shared/Footer/Footer';
 
 const Home = () => {
     return (
@@ -15,6 +17,8 @@ const Home = () => {
             <ExceptionBanner></ExceptionBanner>
             <AppointmentBanner></AppointmentBanner>
             <Testimonial></Testimonial>
+            <ContactUs></ContactUs>
+            <Footer></Footer>
         </div>
     );
 };
