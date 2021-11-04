@@ -3,6 +3,7 @@ import AppointmentBanner from '../AppointmentBanner/AppointmentBanner';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
 import Navigation from '../../Shared/Navigation/Navigation';
+import ExceptionBanner from '../ExceptionBanner/ExceptionBanner';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Navigation></Navigation>
             <Banner></Banner>
             <Services></Services>
+            <ExceptionBanner></ExceptionBanner>
             <AppointmentBanner></AppointmentBanner>
         </div>
     );
