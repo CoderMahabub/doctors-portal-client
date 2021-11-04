@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
 import Navigation from '../../Shared/Navigation/Navigation';
 import ExceptionBanner from '../ExceptionBanner/ExceptionBanner';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Services></Services>
             <ExceptionBanner></ExceptionBanner>
             <AppointmentBanner></AppointmentBanner>
+            <Testimonial></Testimonial>
         </div>
     );
 };
