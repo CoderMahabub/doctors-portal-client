@@ -13,7 +13,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    bgColor: 'background.paper',
+    backgroundColor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
@@ -40,7 +40,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date }) => {
             }}
         >
             <Fade in={openBooking}>
-                <Box sx={style}>
+                <Box sx={style} >
                     <Typography id="transition-modal-title" variant="h6" component="h2">
                         {name}
                     </Typography>
@@ -86,7 +86,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date }) => {
                     </form>
                 </Box>
             </Fade>
-        </Modal>
+        </Modal >
     );
 };
 
