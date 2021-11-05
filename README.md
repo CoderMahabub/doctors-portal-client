@@ -12,5 +12,7 @@
 4. Material Icon
   - yarn add @mui/icons-material
   - yarn add @mui/material
-
+5. Install Firebase. 
+  - npm install firebase
+  - 
 

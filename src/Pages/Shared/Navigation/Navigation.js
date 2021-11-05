@@ -29,6 +29,9 @@ const Navigation = () => {
                     <NavLink to="/login">
                         <Button color="inherit">Login</Button>
                     </NavLink>
+                    <NavLink to="/login">
+                        <Button color="inherit">logOut</Button>
+                    </NavLink>
                 </Toolbar>
             </AppBar>
         </Box>
