@@ -10,7 +10,7 @@ import Alert from '@mui/material/Alert';
 
 const Login = () => {
     const [loginData, setLoginDate] = useState({});
-    const { user, logInUser, isLoading, authError } = useAuth();
+    const { user, logInUser, isLoading, authError, singInWithGoogle } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -23,8 +23,12 @@ const Login = () => {
         setLoginDate(newLoginData);
     }
     const handleLoginSubmit = e => {
-        logInUser(loginData.email, loginData.password, location, history);
+        logInUser(loginData.email, loginData.password, loginData.name, location, history);
         e.preventDefault();
+    }
+
+    const handleGoogleSignIn = () => {
+        singInWithGoogle(history, location)
     }
     return (
         <Container>
@@ -54,11 +58,14 @@ const Login = () => {
 
                         <Button type="submit" sx={{ width: '75%' }} variant="contained">Login</Button>
                     </form>}
+                    <hr />
+                    <Button onClick={handleGoogleSignIn} variant="contained">SignIn using Google</Button>
+                    <br />
                     <NavLink style={{ textDecoration: 'none' }} to="/register">
                         <Button variant="text">NEW USER? PLEASE REGISTER</Button>
                     </NavLink>
                     {isLoading && <CircularProgress />}
-                    {user?.email && <Alert severity="success">Congratulations, Registration Done, Successfully!</Alert>}
+                    {user?.email && <Alert severity="success">Congratulations, Successfully Done!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
                 <Grid item xs={12} md={6}>
