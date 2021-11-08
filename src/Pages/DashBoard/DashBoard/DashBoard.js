@@ -17,7 +17,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
@@ -26,14 +25,17 @@ import {
 import DashboardHome from '../DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddDoctor from '../AddDoctor/AddDoctor';
+import useAuth from '../../../hooks/useAuth';
 
 const drawerWidth = 200;
 
 function DashBoard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-
     let { path, url } = useRouteMatch();
+    const { admin } = useAuth();
+
+
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -44,8 +46,10 @@ function DashBoard(props) {
             <Divider />
             <Link style={{ textDecoration: 'none', color: 'white' }} to="/appointment"><Button>Appointment</Button></Link>
             <Link style={{ textDecoration: 'none', color: 'white' }} to={`${url}`}><Button>Dashboard</Button></Link>
-            <Link style={{ textDecoration: 'none', color: 'white' }} to={`${url}/makeAdmin`}><Button>Make Admin</Button></Link>
-            <Link style={{ textDecoration: 'none', color: 'white' }} to={`${url}/addDoctor`}><Button>Add Doctor</Button></Link>
+            {(admin) && <Box>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={`${url}/makeAdmin`}><Button>Make Admin</Button></Link>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={`${url}/addDoctor`}><Button>Add Doctor</Button></Link>
+            </Box>}
             <List>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
                     <ListItem button key={text}>
@@ -56,7 +60,7 @@ function DashBoard(props) {
                     </ListItem>
                 ))}
             </List>
-        </div>
+        </div >
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
