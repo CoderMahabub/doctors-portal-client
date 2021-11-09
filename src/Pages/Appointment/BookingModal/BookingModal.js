@@ -46,7 +46,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             date: date.toLocaleDateString()
         }
         //send data to server
-        fetch('http://localhost:5000/appointments', {
+        fetch('https://gentle-refuge-55681.herokuapp.com/appointments', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(appointment)

@@ -1,6 +1,5 @@
 import React from 'react';
 import CardContent from '@mui/material/CardContent';
-import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 

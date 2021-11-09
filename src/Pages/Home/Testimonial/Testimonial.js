@@ -3,9 +3,6 @@ import React from 'react';
 import qoute from '../../../images/qoute.png';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import img1 from '../../../images/people-1.png';
-import img2 from '../../../images/people-2.png';
-import img3 from '../../../images/people-3.png';
 import TestimonialSingle from '../TestimonialSingle/TestimonialSingle';
 
 const reviews = [
@@ -24,7 +21,7 @@ const reviews = [
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis ab facilis praesentium tempora alias, deserunt eaque autem nam officiis exercitationem?"
     },
     {
-        id: '1',
+        id: '3',
         name: 'Winson Lerry',
         city: 'Dallas',
         photo: 'https://i.ibb.co/714T4mf/people-2.png',

@@ -20,7 +20,7 @@ const services = [
         img: cavity
     },
     {
-        name: 'Cavity Filling',
+        name: 'Cavity Fillingd',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Esse, in earum asperiores eveniet soluta hic qui! Dicta voluptatibus pariatur impedit commodi fugiat optio ipsa in harum iusto autem',
         img: whitening
     }

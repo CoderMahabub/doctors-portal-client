@@ -10,7 +10,7 @@ import { Typography } from '@mui/material';
 const Info = () => {
     return (
         <Container>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ flexGrow: 1, mt: -8, mb: 10 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={4} style={{ backgroundColor: '#5CE7ED' }}>
                         <Grid sx={{ display: 'flex', alignItems: 'center', color: 'white', py: 2 }}>
@@ -22,7 +22,7 @@ const Info = () => {
                                     Opening Hours
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    (Mon-Fri) 09:00 AM to 09:00 PM
                                 </Typography>
                             </Grid>
                         </Grid>

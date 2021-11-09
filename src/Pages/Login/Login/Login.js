@@ -9,7 +9,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Alert from '@mui/material/Alert';
 
 const Login = () => {
-    const [loginData, setLoginDate] = useState({});
+    const [loginData, setLoginData] = useState({});
     const { user, logInUser, isLoading, authError, singInWithGoogle } = useAuth();
 
     const location = useLocation();
@@ -20,10 +20,10 @@ const Login = () => {
         const value = e.target.value;
         const newLoginData = { ...loginData };
         newLoginData[field] = value;
-        setLoginDate(newLoginData);
+        setLoginData(newLoginData);
     }
     const handleLoginSubmit = e => {
-        logInUser(loginData.email, loginData.password, loginData.name, location, history);
+        logInUser(loginData.email, loginData.password, location, history);
         e.preventDefault();
     }
 

@@ -13,7 +13,7 @@ const Navigation = () => {
     const { user, handleLogout } = useAuth();
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="static" style={{ backgroundColor: '#5CE7ED' }}>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -27,7 +27,7 @@ const Navigation = () => {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Doctors Portal
                     </Typography>
-                    <Link style={{ textDecoration: 'none', color: 'white' }} to="/appointment">Appointment</Link>
+                    <Link style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }} to="/appointment">Appointment</Link>
 
                     {
                         user?.email ?
