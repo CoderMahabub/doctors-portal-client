@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Link } from 'react-router-dom';
 
 const Appointments = ({ date }) => {
     const { user, token } = useAuth();
@@ -50,7 +51,11 @@ const Appointments = ({ date }) => {
                                     {appointment?.serviceName}
                                 </TableCell>
                                 <TableCell component="th" scope="row">
-
+                                    {appointment?.payment ?
+                                        'Paid' :
+                                        <Link to={`/dashboard/payment/${appointment._id}`}>
+                                            <button>Pay</button>
+                                        </Link>}
                                 </TableCell>
 
                             </TableRow>
