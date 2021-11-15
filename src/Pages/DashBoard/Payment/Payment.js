@@ -14,7 +14,7 @@ const Payment = () => {
     const { appointmentId } = useParams();
     const [appointment, setAppointment] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/appointments/${appointmentId}`)
+        fetch(`https://gentle-refuge-55681.herokuapp.com/appointments/${appointmentId}`)
             .then(res => res.json())
             .then(data => setAppointment(data))
     }, [appointmentId])
