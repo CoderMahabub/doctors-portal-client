@@ -13,7 +13,7 @@ const TestimonialSingle = ({ review }) => {
                 </Typography>
                 <Grid container spacing={2} sx={{ my: 3, display: 'flex', alignItems: 'center' }} >
                     <Grid item xs={4} md={4}>
-                        <img src={photo} style={{ width: '70%' }} />
+                        <img src={photo} style={{ width: '70%' }} alt="" />
                     </Grid>
                     <Grid item xs={8} md={8} >
                         <Typography style={{ color: '#5CE7ED' }} sx={{ m: 0, display: 'block' }} variant="h5" gutterBottom component="div">

@@ -8,6 +8,7 @@ import Testimonial from '../Testimonial/Testimonial';
 import ContactUs from '../ContactUs/ContactUs';
 import Footer from '../../Shared/Footer/Footer';
 import Info from '../Info/Info';
+import Doctors from '../Doctors/Doctors';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <Services></Services>
             <ExceptionBanner></ExceptionBanner>
             <AppointmentBanner></AppointmentBanner>
+            <Doctors></Doctors>
             <Testimonial></Testimonial>
             <ContactUs></ContactUs>
             <Footer></Footer>
